@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hiperdev-api
+  name: hiperdev-api-abrao
   namespace: hiperdev
 spec:
   selector:
     matchLabels:
-      app: hiperdev-api
+      app: hiperdev-api-abrao
   template:
     metadata:
       labels:
-        app: hiperdev-api
+        app: hiperdev-api-abrao
     spec:
       containers:
-      - name: hiperdev-api
-        image: hiperdevcr.azurecr.io/hiperdev
+      - name: hiperdev-api-abrao
+        image: hiperdevcr.azurecr.io/hiperdev-api-abrao
         resources:
           limits:
             memory: "128Mi"
